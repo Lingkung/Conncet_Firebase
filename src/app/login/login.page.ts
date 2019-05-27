@@ -36,7 +36,6 @@ export class LoginPage implements OnInit {
 		} catch(err) {
 			console.dir(err)
 			if(err.code === "auth/user-not-found") {
-				console.log("User not found")
 
 				this.presentAlert( 'Not found!')
 				this.router.navigate(['/register'])
